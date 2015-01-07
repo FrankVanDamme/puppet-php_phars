@@ -315,6 +315,13 @@ All the examples:
 
 ## Release Notes
 
+### 0.1.1
+
+* list_of_phars renamed to catalog
+* documentation tweaks
+* examples for errors
+* use fail for errors
+
 ### 0.1.0
 
 * initial release
