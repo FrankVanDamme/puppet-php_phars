@@ -24,7 +24,7 @@ class php_phars::params {
   # Required keys: app, url
   # Optional keys: target_dir, user, rights, redownload
   #
-  $list_of_phars = [
+  $catalog = [
     {
         'app' => 'composer',
         'url' => 'https://getcomposer.org/composer.phar'

@@ -159,7 +159,7 @@ class php_phars (
   $param_append = $append
 
   if $param_all == true {
-    php_phars::process_array { $::php_phars::params::list_of_phars:
+    php_phars::process_array { $::php_phars::params::catalog:
 
       target_dir => $param_target_dir,
       user       => $param_user,
@@ -169,7 +169,7 @@ class php_phars (
   }
 
   if $param_phars {
-    php_phars::process_array { $::php_phars::params::list_of_phars:
+    php_phars::process_array { $::php_phars::params::catalog:
 
       target_dir => $param_target_dir,
       user       => $param_user,

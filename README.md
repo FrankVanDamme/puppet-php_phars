@@ -45,7 +45,7 @@ You can install:
 * only those PHARS from the catalog that you need
 * user defined PHARS
 
-The catalog is an array named `$list_of_phars`:
+The catalog is an array named `$catalog`:
 defined in
 [manifests/params.pp](https://github.com/pro-vagrant/puppet-php_phars/blob/master/manifests/params.pp)
 file. The fragment of this array is shown in [Reference](#reference).
@@ -220,7 +220,7 @@ The catalog is an array of hashes:
 
     ...
 
-      $list_of_phars = [
+      $catalog = [
       {
           'app' => 'composer',
           'url' => 'https://getcomposer.org/composer.phar'
