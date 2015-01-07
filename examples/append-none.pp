@@ -4,8 +4,8 @@ class { 'php_phars':
 
     append => [
         {
-            'app' => 'symvirins',
-            'url' => 'https://raw.githubusercontent.com/karlosagudo/symvirins/master/symvirins.phar'
+            'app' => 'lorem',
+            'url' => 'http://symfony.com/installer'
         }
     ],
 

@@ -13,8 +13,8 @@ class { 'php_phars':
 
     append => [
         {
-            'app' => 'some-json-file',
-            'url' => 'https://raw.githubusercontent.com/symfony/symfony-standard/2.7/composer.json'
+            'app' => 'symfony-homepage',
+            'url' => 'http://symfony.com'
         }
     ],
 

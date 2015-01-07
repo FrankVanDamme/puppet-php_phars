@@ -255,8 +255,11 @@ The catalog contains the following PHARS:
 
 The module was tested on:
 
-* Ubuntu 12.04 / Puppet 3.7
-* Ubuntu 14.04 / Puppet 3.7
+* Ubuntu
+  - 12.04 / Puppet 3.7
+  - 14.04 / Puppet 3.7
+* CentOS
+  - 6.5 / Puppet 3.7
 
 ## Development
 
@@ -319,18 +322,25 @@ The commands to build a module:
 
 All the examples:
 
-    sudo puppet apply examples/none.pp
-
     sudo puppet apply examples/all.pp
     sudo puppet apply examples/all-redownload.pp
     sudo puppet apply examples/all-relocate.pp
+    sudo puppet apply examples/all-verbose.pp
+
+    sudo puppet apply examples/append-all.pp
+    sudo puppet apply examples/append-none.pp
+
+    sudo puppet apply examples/none.pp
 
     sudo puppet apply examples/only-composer.pp
     sudo puppet apply examples/only-composer-phpunit.pp
 
-    sudo puppet apply examples/append-none.pp
-    sudo puppet apply examples/append-all.pp
+    sudo puppet apply examples/special-settings-1.pp
 
+
+    sudo puppet apply examples/error-1.pp
+    sudo puppet apply examples/error-2.pp
+    sudo puppet apply examples/error-3.pp
 
 ## Inspiration
 
