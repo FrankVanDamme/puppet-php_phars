@@ -10,9 +10,9 @@
     * [Beginning with php_phars](#beginning-with-php_phars)
 4. [Usage](#usage)
 5. [Reference](#reference)
-5. [Limitations](#limitations)
-6. [Development](#development)
-7. [Release notes](#release-notes)
+6. [Limitations](#limitations)
+7. [Development](#development)
+8. [Inspiration](#inspiration)
 
 ## Overview
 
@@ -330,16 +330,9 @@ All the examples:
     sudo puppet apply examples/append-all.pp
 
 
-## Release Notes
+## Inspiration
 
-### 0.1.1
-
-* list_of_phars renamed to catalog
-* documentation tweaks
-* examples for errors
-* use fail for errors
-
-### 0.1.0
-
-* initial release
-* works fine with attached examples
+The inspiration came from
+[`willdurrand-composer`](https://forge.puppetlabs.com/willdurand/composer)
+authored
+[by William Durand](https://github.com/willdurand/puppet-composer).
