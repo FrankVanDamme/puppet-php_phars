@@ -35,8 +35,9 @@ It can be seen as a sequence of three:
 
 commands.
 
-The module uses a build-in catalog of well-known PHARS, like
+The module contains **a build-in catalog of well-known PHARS**, like
 `composer`, `phpunit`, `php-cs-fixer`.
+Thus, you dont have to care about their URLs.
 
 You can install:
 
@@ -66,7 +67,7 @@ This operation can be executed:
 * only chosen PHARS from the catalog
 * user defined PHARS
 
-### Setup Requirements **OPTIONAL**
+### Setup Requirements
 
 The module uses:
 
@@ -75,7 +76,7 @@ The module uses:
 * `gajdaw-filefetcher` puppet module https://github.com/pro-vagrant/puppet-filefetcher
 * when missing, `wget` is automatically installed by `maestrodev-wget` module
 
-### Beginning with php_phars
+### Beginning with `php_phars`
 
 #### System wide install with Puppet
 
@@ -99,7 +100,6 @@ To lock the version, use:
 
     git clone --depth 1 --branch v0.1.0 https://github.com/pro-vagrant/puppet-php_phars.git .
 
-
 ## Usage
 
 The examples are stored under `examples/` directory.
@@ -111,7 +111,6 @@ The examples are stored under `examples/` directory.
     class { 'php_phars':
         all => true,
     }
-
 
 You can run the example with:
 
@@ -126,14 +125,12 @@ The command will install all PHARS:
     ...
 
 By default: PHARS are not redownloaded.
-Thus, when you run:
+Thus, when you run the command again and again:
 
     sudo puppet apply examples/all.pp
     sudo puppet apply examples/all.pp
 
-nothing happens.
-
-
+nothing happens. To force redownload use `redownload` parameter.
 
 
 ### Install/Update all PHARS from the catalog
@@ -149,6 +146,7 @@ You can run the example with:
 
     sudo puppet apply examples/all-redownload.pp
 
+This example redownloads PHARS every time you run it.
 
 ### Install composer and phpunit only
 
@@ -250,6 +248,7 @@ The best method I have found so far to work on Puppet modules is:
 * create a Vagrant env in the dir that contains all the modules
 
 
+```
     .
     ├── puppet-filefetcher
     │   ├── examples
@@ -274,6 +273,7 @@ The best method I have found so far to work on Puppet modules is:
     │   ├── spec
     │   └── tests
     └── Vagrantfile
+```
 
 Then create symbolic links to modules:
 
