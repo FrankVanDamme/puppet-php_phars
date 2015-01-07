@@ -102,7 +102,8 @@ To lock the version, use:
 
 ## Usage
 
-The examples are stored under `examples/` directory.
+For a more complete list of examples
+refer to `examples/` directory.
 
 ### Install all PHARS from the catalog
 
@@ -131,7 +132,6 @@ Thus, when you run the command again and again:
     sudo puppet apply examples/all.pp
 
 nothing happens. To force redownload use `redownload` parameter.
-
 
 ### Install/Update all PHARS from the catalog
 

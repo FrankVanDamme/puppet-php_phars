@@ -39,7 +39,7 @@ define php_phars::process_array (
       }
 
     } else {
-        warning('ERROR #1 in php_phars::process_array')
+        fail('ERROR #1 in php_phars::process_array')
     }
 
 }

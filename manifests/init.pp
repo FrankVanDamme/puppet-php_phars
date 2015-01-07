@@ -39,72 +39,7 @@
 #
 # === Examples
 #
-# Install all the PHARS from the catalog:
-#
-#    class { 'php_phars':
-#        all => true,
-#    }
-#
-#
-#
-# Install all the PHARS from the catalog
-# Redownload everytime this manifest is processed
-#
-#    class { 'php_phars':
-#        all        => true,
-#        redownload => true,
-#    }
-#
-#
-# Install composer and phpunit only
-#
-#    class { 'php_phars':
-#        phars      => ['composer', 'phpunit'],
-#    }
-#
-#
-# Install composer and phpunit only
-# Redownload everytime this manifest is processed
-#
-#    class { 'php_phars':
-#        phars      => ['composer', 'phpunit'],
-#        redownload => true,
-#    }
-#
-#
-#
-#
-# Install all the PHARS from the catalog and symvirins
-#
-#    class { 'php_phars':
-#
-#        all => true,
-#
-#        append => [
-#            {
-#                'app' => 'symvirins',
-#                'url' => 'https://raw.githubusercontent.com/karlosagudo/symvirins/master/symvirins.phar'
-#            }
-#        ],
-#
-#    }
-#
-#
-#
-# Install only symvirins
-#
-#    class { 'php_phars':
-#
-#        append => [
-#            {
-#                'app' => 'symvirins',
-#                'url' => 'https://raw.githubusercontent.com/karlosagudo/symvirins/master/symvirins.phar'
-#            }
-#        ],
-#
-#    }
-#
-#
+# For examples, refer to examples/ directory of this module.
 #
 # === Authors
 #

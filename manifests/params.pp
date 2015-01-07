@@ -24,6 +24,7 @@ class php_phars::params {
   # Required keys: app, url
   # Optional keys: target_dir, user, rights, redownload
   #
+  # As of now: optional keys are not used
   $catalog = [
     {
         'app' => 'composer',

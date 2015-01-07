@@ -3,7 +3,7 @@ class { 'php_phars':
     # Download composer.phar
     # and one special file.
     #
-    # Redownload them each time
+    # Use special settings for dir/user/rights
 
     target_dir => '/tmp',
     user       => 'vagrant',
