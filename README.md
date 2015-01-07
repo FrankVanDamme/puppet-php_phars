@@ -92,8 +92,8 @@ You may lock the version to avoid using the latest version:
 
 You may also use `git` to install the module:
 
-    mkdir -p /etc/puppet/modules/box
-    cd /etc/puppet/modules/box
+    mkdir -p /etc/puppet/modules/php_phars
+    cd /etc/puppet/modules/php_phars
     git clone --depth 1 https://github.com/pro-vagrant/puppet-php_phars.git .
 
 To lock the version, use:
@@ -220,23 +220,40 @@ The catalog is an array of hashes:
 
     ...
 
-      $catalog = [
-      {
-          'app' => 'composer',
-          'url' => 'https://getcomposer.org/composer.phar'
-      },
-      {
-          'app' => 'phpunit',
-          'url' => 'https://phar.phpunit.de/phpunit.phar'
-      },
-
-      ...
-
+    $catalog = [
+        {
+            'app' => 'composer',
+            'url' => 'https://getcomposer.org/composer.phar'
+        },
+        {
+            'app' => 'phpunit',
+            'url' => 'https://phar.phpunit.de/phpunit.phar'
+        },
+        {
+            'app' => 'php-cs-fixer',
+            'url' => 'http://cs.sensiolabs.org/get/php-cs-fixer.phar'
+        },
+        {
+            'app' => 'box',
+            'url' => 'https://github.com/box-project/box2/releases/download/2.5.0/box-2.5.0.phar'
+        },
+        {
+            'app' => 'symfony',
+            'url' => 'http://symfony.com/installer'
+        }
     ]
+
+The catalog contains the following PHARS:
+
+* `composer`
+* `phpunit`
+* `box v2.5.0`
+* `symfony` installer
+* `php-cs-fixer`
 
 ## Limitations
 
-The box was tested on:
+The module was tested on:
 
 * Ubuntu 14.04 / Puppet 3.7
 
