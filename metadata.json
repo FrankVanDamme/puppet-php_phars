@@ -1,0 +1,47 @@
+{
+  "name": "gajdaw-php_phars",
+  "version": "0.1.0",
+  "author": "gajdaw",
+  "summary": "A module to install PHARS: composer.phar, phpunit.phar, etc.",
+  "license": "MIT",
+  "source": "https://github.com/pro-vagrant/puppet-php_phars",
+  "project_page": "https://github.com/pro-vagrant/puppet-php_phars",
+  "issues_url": "https://github.com/pro-vagrant/puppet-php_phars/issues",
+  "tags": [
+    "php",
+    "phar",
+    "composer",
+    "phpunit",
+    "php-cs-fixer",
+    "box",
+    "symfony"
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "14.04"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": "3.x"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gajdaw/filefetcher",
+      "version_requirement": ">=0.1.2"
+    },
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">=4.5.0"
+    },
+    {
+      "name": "maestrodev/wget",
+      "version_requirement": ">=1.2.0"
+    }
+  ]
+}
