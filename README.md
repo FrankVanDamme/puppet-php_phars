@@ -255,6 +255,7 @@ The catalog contains the following PHARS:
 
 The module was tested on:
 
+* Ubuntu 12.04 / Puppet 3.7
 * Ubuntu 14.04 / Puppet 3.7
 
 ## Development
@@ -312,6 +313,7 @@ The commands to build a module:
     puppet module build
 
     sudo puppet module list
+    sudo puppet module install gajdaw-php_phars
     sudo puppet module install pkg/gajdaw-php_phars-0.1.0.tar.gz
     sudo puppet module uninstall gajdaw-php_phars
 
