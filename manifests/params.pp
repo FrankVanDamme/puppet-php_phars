@@ -27,24 +27,32 @@ class php_phars::params {
   # As of now: optional keys are not used
   $catalog = [
     {
-        'app' => 'composer',
-        'url' => 'https://getcomposer.org/composer.phar'
+      'app' => 'composer',
+      'url' => 'https://getcomposer.org/composer.phar'
     },
     {
-        'app' => 'phpunit',
-        'url' => 'https://phar.phpunit.de/phpunit.phar'
+      'app' => 'phpunit',
+      'url' => 'https://phar.phpunit.de/phpunit.phar'
     },
     {
-        'app' => 'php-cs-fixer',
-        'url' => 'http://cs.sensiolabs.org/get/php-cs-fixer.phar'
+      'app' => 'php-cs-fixer',
+      'url' => 'http://cs.sensiolabs.org/get/php-cs-fixer.phar'
     },
     {
-        'app' => 'box',
-        'url' => 'https://github.com/box-project/box2/releases/download/2.5.0/box-2.5.0.phar'
+      'app' => 'box',
+      'url' => 'https://github.com/box-project/box2/releases/download/2.5.0/box-2.5.0.phar'
     },
     {
-        'app' => 'symfony',
-        'url' => 'http://symfony.com/installer'
+      'app' => 'behat',
+      'url' => 'https://github.com/Behat/Behat/releases/download/v3.0.14/behat.phar'
+    },
+    {
+      'app' => 'phpspec',
+      'url' => 'https://github.com/phpspec/phpspec/releases/download/2.1.1/phpspec.phar'
+    },
+    {
+      'app' => 'symfony',
+      'url' => 'http://symfony.com/installer'
     }
   ]
 }

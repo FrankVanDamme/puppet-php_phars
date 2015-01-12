@@ -37,7 +37,7 @@ commands.
 
 The module contains **a build-in catalog of well-known PHARS**, like
 `composer`, `phpunit`, `php-cs-fixer`.
-Thus, you dont have to care about their URLs.
+Thus, you don't have to care about their URLs.
 
 You can install:
 
@@ -123,7 +123,9 @@ The command will install all PHARS:
     /usr/local/bin/phpunit
     /usr/local/bin/php-cs-fixer
     /usr/local/bin/box
-    ...
+    /usr/local/bin/behat
+    /usr/local/bin/phpspec
+    /usr/local/bin/symfony
 
 By default: PHARS are not redownloaded.
 Thus, when you run the command again and again:
@@ -194,10 +196,13 @@ If php is missing, install it with:
 
 Now, you can use the binaries:
 
-    phpunit --version
     composer --version
+    phpunit --version
     php-cs-fixer --version
     box --version
+    behat --version
+    phpspec --version
+    symfony --version
 
 ### Uninstall
 
@@ -207,6 +212,9 @@ Currently, to uninstall files, you have to use `rm` command:
     sudo rm /usr/local/bin/phpunit
     sudo rm /usr/local/bin/php-cs-fixer
     sudo rm /usr/local/bin/box
+    sudo rm /usr/local/bin/behat
+    sudo rm /usr/local/bin/phpspec
+    sudo rm /usr/local/bin/symfony
 
 ## Reference
 
@@ -238,6 +246,14 @@ The catalog is an array of hashes:
             'url' => 'https://github.com/box-project/box2/releases/download/2.5.0/box-2.5.0.phar'
         },
         {
+            'app' => 'behat',
+            'url' => 'https://github.com/Behat/Behat/releases/download/v3.0.14/behat.phar'
+        },
+        {
+            'app' => 'phpspec',
+            'url' => 'https://github.com/phpspec/phpspec/releases/download/2.1.1/phpspec.phar'
+        },
+        {
             'app' => 'symfony',
             'url' => 'http://symfony.com/installer'
         }
@@ -247,9 +263,11 @@ The catalog contains the following PHARS:
 
 * `composer`
 * `phpunit`
-* `box v2.5.0`
-* `symfony` installer
 * `php-cs-fixer`
+* `box 2.5.0`
+* `behat v3.0.14`
+* `phpspec 2.1.1`
+* `symfony` installer
 
 ## Limitations
 
@@ -263,88 +281,12 @@ The module was tested on:
 
 ## Development
 
-The best method I have found so far to work on Puppet modules is:
-
-* keep all modules in a single directory of your host (`host/some/dir`)
-* create a Vagrant env in the dir that contains all the modules
-
-
-```
-    .
-    ├── puppet-filefetcher
-    │   ├── examples
-    │   ├── Gemfile
-    │   ├── LICENSE
-    │   ├── manifests
-    │   ├── metadata.json
-    │   ├── pkg
-    │   ├── Rakefile
-    │   ├── README.md
-    │   ├── spec
-    │   ├── tests
-    │   └── tmp
-    ├── puppet-php_phars
-    │   ├── examples
-    │   ├── Gemfile
-    │   ├── LICENSE
-    │   ├── manifests
-    │   ├── metadata.json
-    │   ├── Rakefile
-    │   ├── README.md
-    │   ├── spec
-    │   └── tests
-    └── Vagrantfile
-```
-
-Then create symbolic links to modules:
-
-    sudo ln -s /vagrant/puppet-php_phars /etc/puppet/modules/php_phars
-
-Working this way you can test the module without:
-
-* building
-* installing
-* uploading to the Puppet Forge
-
-The command to check CS:
-
-    puppet-lint manifests --no-autoloader_layout-check
-
-The commands to build a module:
-
-    rm -rf pkg/
-    puppet module build
-
-    sudo puppet module list
-    sudo puppet module install gajdaw-php_phars
-    sudo puppet module install pkg/gajdaw-php_phars-0.1.0.tar.gz
-    sudo puppet module uninstall gajdaw-php_phars
-
-All the examples:
-
-    sudo puppet apply examples/all.pp
-    sudo puppet apply examples/all-redownload.pp
-    sudo puppet apply examples/all-relocate.pp
-    sudo puppet apply examples/all-verbose.pp
-
-    sudo puppet apply examples/append-all.pp
-    sudo puppet apply examples/append-none.pp
-
-    sudo puppet apply examples/none.pp
-
-    sudo puppet apply examples/only-composer.pp
-    sudo puppet apply examples/only-composer-phpunit.pp
-
-    sudo puppet apply examples/special-settings-1.pp
-
-
-    sudo puppet apply examples/error-1.pp
-    sudo puppet apply examples/error-2.pp
-    sudo puppet apply examples/error-3.pp
+For development instructions visit
+[Puppet Modules Factory](https://github.com/pro-vagrant/puppet-modules-factory)
 
 ## Inspiration
 
 The inspiration came from
 [`willdurrand-composer`](https://forge.puppetlabs.com/willdurand/composer)
-authored
+puppet module authored
 [by William Durand](https://github.com/willdurand/puppet-composer).

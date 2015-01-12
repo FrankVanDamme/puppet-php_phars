@@ -14,6 +14,8 @@
     "phpunit",
     "php-cs-fixer",
     "box",
+    "behat",
+    "phpspec",
     "symfony"
   ],
   "operatingsystem_support": [
