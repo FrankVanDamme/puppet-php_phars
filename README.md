@@ -48,7 +48,7 @@ You can install:
 The catalog is an array named `$catalog`:
 defined in
 [manifests/params.pp](https://github.com/pro-vagrant/puppet-php_phars/blob/master/manifests/params.pp)
-file. The fragment of this array is shown in [Reference](#reference).
+file. This array is shown in [Reference](#reference).
 
 ## Setup
 
