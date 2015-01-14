@@ -1,0 +1,3 @@
+filename:    'metadata.json'
+regex:       '/"version": "(?P<version>[\d\.]+)",/'
+replacement: '"version": "{{ version }}",'
