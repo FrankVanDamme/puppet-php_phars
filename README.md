@@ -274,10 +274,45 @@ The catalog contains the following PHARS:
 The module was tested on:
 
 * Ubuntu
-  - 12.04 / Puppet 3.7
-  - 14.04 / Puppet 3.7
+  - 12.04 / Puppet 3.7 (Vagrant box: ubuntu/precise32)
+  - 14.04 / Puppet 3.7 (Vagrant box: ubuntu/trusty32)
 * CentOS
-  - 6.5 / Puppet 3.7
+  - 6.5 / Puppet 3.7 (Vagrant box: puppetlabs/centos-6.5-64-puppet)
+  - 7.0 / Puppet 3.7 (Vagrant box: puppetlabs/centos-7.0-64-puppet)
+* Debian
+  - 6.0 / Puppet 3.7 (Vagrant box: chef/debian-6.0.8)
+  - 7.4 / Puppet 3.7 (Vagrant box: chef/debian-7.4)
+* Fedora
+  - 20 / Puppet 3.7 (Vagrant box: chef/fedora-20)
+
+## How to test this module?
+
+Boot the VM:
+
+    $ vagrant up
+
+Update Puppet to version 3.7.
+
+Create symbolic links:
+
+    $ cd /vagrant
+    $ ./symlinks.sh
+
+Install dependencies:
+
+    $ sudo puppet module install puppetlabs-stdlib
+    $ sudo puppet module install maestrodev/wget
+
+Run:
+
+    $ sudo puppet apply modules/puppet-php_phars/examples/only-composer-phpunit.pp
+
+Install PHP.
+
+Run:
+
+    $ composer --version
+    $ phpunit --version
 
 ## Development
 
