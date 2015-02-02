@@ -261,13 +261,13 @@ The catalog is an array of hashes:
 
 The catalog contains the following PHARS:
 
-* `composer`
-* `phpunit`
-* `php-cs-fixer`
-* `box 2.5.0`
-* `behat v3.0.14`
-* `phpspec 2.1.1`
-* `symfony` installer
+* `composer` - https://getcomposer.org/
+* `phpunit` - https://phpunit.de/
+* `php-cs-fixer` - https://github.com/FriendsOfPHP/PHP-CS-Fixer
+* `box 2.5.0` - http://box-project.org/
+* `behat v3.0.14` - https://github.com/Behat/Behat
+* `phpspec 2.1.1` - http://www.phpspec.net/en/latest/
+* `symfony` installer - https://github.com/symfony/symfony-installer
 
 ## Limitations
 
