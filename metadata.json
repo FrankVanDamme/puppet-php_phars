@@ -4,9 +4,9 @@
   "author": "gajdaw",
   "summary": "A module to install PHARS: composer.phar, phpunit.phar, etc.",
   "license": "MIT",
-  "source": "https://github.com/pro-vagrant/puppet-php_phars",
-  "project_page": "https://github.com/pro-vagrant/puppet-php_phars",
-  "issues_url": "https://github.com/pro-vagrant/puppet-php_phars/issues",
+  "source": "https://github.com/puppet-by-examples/puppet-php_phars",
+  "project_page": "https://github.com/puppet-by-examples/puppet-php_phars",
+  "issues_url": "https://github.com/puppet-by-examples/puppet-php_phars/issues",
   "tags": [
     "php",
     "phar",

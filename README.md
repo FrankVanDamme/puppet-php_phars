@@ -47,7 +47,7 @@ You can install:
 
 The catalog is an array named `$catalog`:
 defined in
-[manifests/params.pp](https://github.com/pro-vagrant/puppet-php_phars/blob/master/manifests/params.pp)
+[manifests/params.pp](https://github.com/puppet-by-examples/puppet-php_phars/blob/master/manifests/params.pp)
 file. This array is shown in [Reference](#reference).
 
 ## Setup
@@ -73,7 +73,7 @@ The module uses:
 
 * `wget` to download files
 * `maestrodev-wget` puppet module https://github.com/maestrodev/puppet-wget
-* `gajdaw-filefetcher` puppet module https://github.com/pro-vagrant/puppet-filefetcher
+* `gajdaw-filefetcher` puppet module https://github.com/puppet-by-examples/puppet-filefetcher
 * when missing, `wget` is automatically installed by `maestrodev-wget` module
 
 ### Beginning with `php_phars`
@@ -94,11 +94,11 @@ You may also use `git` to install the module:
 
     mkdir -p /etc/puppet/modules/php_phars
     cd /etc/puppet/modules/php_phars
-    git clone --depth 1 https://github.com/pro-vagrant/puppet-php_phars.git .
+    git clone --depth 1 https://github.com/puppet-by-examples/puppet-php_phars.git .
 
 To lock the version, use:
 
-    git clone --depth 1 --branch v0.1.0 https://github.com/pro-vagrant/puppet-php_phars.git .
+    git clone --depth 1 --branch v0.1.0 https://github.com/puppet-by-examples/puppet-php_phars.git .
 
 ## Usage
 
@@ -219,7 +219,7 @@ Currently, to uninstall files, you have to use `rm` command:
 ## Reference
 
 The complete list of parameters is available in
-[`manifests/fetch.pp`](https://github.com/pro-vagrant/puppet-filefetcher/blob/master/manifests/fetch.pp)
+[`manifests/fetch.pp`](https://github.com/puppet-by-examples/puppet-filefetcher/blob/master/manifests/fetch.pp)
 file.
 
 The catalog is an array of hashes:
@@ -317,7 +317,7 @@ Run:
 ## Development
 
 For development instructions visit
-[Puppet Modules Factory](https://github.com/pro-vagrant/puppet-modules-factory)
+[Puppet Modules Factory](https://github.com/puppet-by-examples/puppet-modules-factory)
 
 ## Inspiration
 
