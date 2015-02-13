@@ -61,6 +61,10 @@
     {
       "name": "puppetlabs/stdlib",
       "version_requirement": ">=4.5.0"
+    },
+    {
+      "name": "gajdaw/diverse_functions",
+      "version_requirement": ">=0.1.1"
     }
   ]
 }

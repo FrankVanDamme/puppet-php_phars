@@ -60,6 +60,15 @@ class php_phars (
   $append     = undef,
 ) {
 
+  # validate_platform() function comes from
+  # puppet module gajdaw/diverse_functions
+  #
+  #     https://forge.puppetlabs.com/gajdaw/diverse_functions
+  #
+  if !validate_platform($module_name) {
+    fail("Platform not supported in module '${module_name}'.")
+  }
+
   # if all is set to true phars parameter should be ignored
 
   include php_phars::params
