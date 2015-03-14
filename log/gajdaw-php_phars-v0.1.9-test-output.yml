@@ -1,0 +1,134 @@
+
+
+#
+# Log produced by: puppet-modules-factory
+# For more info: https://github.com/puppet-by-examples/puppet-modules-factory
+#
+
+
+start_date: 2015-03-14
+start_time: 16:22:59
+module: gajdaw-php_phars
+version: v0.1.9
+testsuite: tests/gajdaw-php_phars/*
+testfiles: 'tests/gajdaw-php_phars/vm-tests'
+
+tests:
+
+
+    -
+        start_date: 2015-03-14
+        start_time: 16:22:59
+        vagrantfile: tests/gajdaw-php_phars/vm-tests/debian-6-0
+        output: '
+
+Debian
+6.0.8
+
+[mNotice: Compiled catalog for packer-debian-6.0.8-amd64 in environment production in 0.77 seconds[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[appcomposerurlhttps://getcomposer.org/composer.phar]/Filefetcher::Fetch[composer]/Wget::Fetch[wget::fetch composer]/Exec[wget-wget::fetch composer]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[appbehaturlhttps://github.com/Behat/Behat/releases/download/v3.0.14/behat.phar]/Filefetcher::Fetch[behat]/Wget::Fetch[wget::fetch behat]/Exec[wget-wget::fetch behat]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[appsymfonyurlhttp://symfony.com/installer]/Filefetcher::Fetch[symfony]/Wget::Fetch[wget::fetch symfony]/Exec[wget-wget::fetch symfony]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[appsymfonyurlhttp://symfony.com/installer]/Filefetcher::Fetch[symfony]/Exec[fix permissions symfony]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[appcomposerurlhttps://getcomposer.org/composer.phar]/Filefetcher::Fetch[composer]/Exec[fix permissions composer]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[appbehaturlhttps://github.com/Behat/Behat/releases/download/v3.0.14/behat.phar]/Filefetcher::Fetch[behat]/Exec[fix permissions behat]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[appphp-cs-fixerurlhttp://get.sensiolabs.org/php-cs-fixer.phar]/Filefetcher::Fetch[php-cs-fixer]/Wget::Fetch[wget::fetch php-cs-fixer]/Exec[wget-wget::fetch php-cs-fixer]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[appphp-cs-fixerurlhttp://get.sensiolabs.org/php-cs-fixer.phar]/Filefetcher::Fetch[php-cs-fixer]/Exec[fix permissions php-cs-fixer]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[appphpspecurlhttps://github.com/phpspec/phpspec/releases/download/2.1.1/phpspec.phar]/Filefetcher::Fetch[phpspec]/Wget::Fetch[wget::fetch phpspec]/Exec[wget-wget::fetch phpspec]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[appphpspecurlhttps://github.com/phpspec/phpspec/releases/download/2.1.1/phpspec.phar]/Filefetcher::Fetch[phpspec]/Exec[fix permissions phpspec]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[appboxurlhttps://github.com/box-project/box2/releases/download/2.5.0/box-2.5.0.phar]/Filefetcher::Fetch[box]/Wget::Fetch[wget::fetch box]/Exec[wget-wget::fetch box]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[appboxurlhttps://github.com/box-project/box2/releases/download/2.5.0/box-2.5.0.phar]/Filefetcher::Fetch[box]/Exec[fix permissions box]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[appphpuniturlhttps://phar.phpunit.de/phpunit.phar]/Filefetcher::Fetch[phpunit]/Wget::Fetch[wget::fetch phpunit]/Exec[wget-wget::fetch phpunit]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[appphpuniturlhttps://phar.phpunit.de/phpunit.phar]/Filefetcher::Fetch[phpunit]/Exec[fix permissions phpunit]/returns: executed successfully[0m
+[mNotice: Finished catalog run in 53.23 seconds[0m
+
+        '
+
+    -
+        start_date: 2015-03-14
+        start_time: 16:27:56
+        vagrantfile: tests/gajdaw-php_phars/vm-tests/debian-7-4
+        output: '
+
+Debian
+7.4
+
+[mNotice: Compiled catalog for packer-debian-7.4-amd64 in environment production in 0.69 seconds[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"behat", "url"=>"https://github.com/Behat/Behat/releases/download/v3.0.14/behat.phar"}]/Filefetcher::Fetch[behat]/Wget::Fetch[wget::fetch behat]/Exec[wget-wget::fetch behat]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"symfony", "url"=>"http://symfony.com/installer"}]/Filefetcher::Fetch[symfony]/Wget::Fetch[wget::fetch symfony]/Exec[wget-wget::fetch symfony]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"symfony", "url"=>"http://symfony.com/installer"}]/Filefetcher::Fetch[symfony]/Exec[fix permissions symfony]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"behat", "url"=>"https://github.com/Behat/Behat/releases/download/v3.0.14/behat.phar"}]/Filefetcher::Fetch[behat]/Exec[fix permissions behat]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"php-cs-fixer", "url"=>"http://get.sensiolabs.org/php-cs-fixer.phar"}]/Filefetcher::Fetch[php-cs-fixer]/Wget::Fetch[wget::fetch php-cs-fixer]/Exec[wget-wget::fetch php-cs-fixer]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"php-cs-fixer", "url"=>"http://get.sensiolabs.org/php-cs-fixer.phar"}]/Filefetcher::Fetch[php-cs-fixer]/Exec[fix permissions php-cs-fixer]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"composer", "url"=>"https://getcomposer.org/composer.phar"}]/Filefetcher::Fetch[composer]/Wget::Fetch[wget::fetch composer]/Exec[wget-wget::fetch composer]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"composer", "url"=>"https://getcomposer.org/composer.phar"}]/Filefetcher::Fetch[composer]/Exec[fix permissions composer]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"box", "url"=>"https://github.com/box-project/box2/releases/download/2.5.0/box-2.5.0.phar"}]/Filefetcher::Fetch[box]/Wget::Fetch[wget::fetch box]/Exec[wget-wget::fetch box]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"box", "url"=>"https://github.com/box-project/box2/releases/download/2.5.0/box-2.5.0.phar"}]/Filefetcher::Fetch[box]/Exec[fix permissions box]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"phpunit", "url"=>"https://phar.phpunit.de/phpunit.phar"}]/Filefetcher::Fetch[phpunit]/Wget::Fetch[wget::fetch phpunit]/Exec[wget-wget::fetch phpunit]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"phpunit", "url"=>"https://phar.phpunit.de/phpunit.phar"}]/Filefetcher::Fetch[phpunit]/Exec[fix permissions phpunit]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"phpspec", "url"=>"https://github.com/phpspec/phpspec/releases/download/2.1.1/phpspec.phar"}]/Filefetcher::Fetch[phpspec]/Wget::Fetch[wget::fetch phpspec]/Exec[wget-wget::fetch phpspec]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"phpspec", "url"=>"https://github.com/phpspec/phpspec/releases/download/2.1.1/phpspec.phar"}]/Filefetcher::Fetch[phpspec]/Exec[fix permissions phpspec]/returns: executed successfully[0m
+[mNotice: Finished catalog run in 57.27 seconds[0m
+
+        '
+
+    -
+        start_date: 2015-03-14
+        start_time: 16:32:25
+        vagrantfile: tests/gajdaw-php_phars/vm-tests/ubuntu-12-04
+        output: '
+
+Ubuntu
+12.04
+
+[mNotice: Compiled catalog for vagrant-ubuntu-precise-32 in environment production in 0.51 seconds[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[urlhttps://getcomposer.org/composer.pharappcomposer]/Filefetcher::Fetch[composer]/Wget::Fetch[wget::fetch composer]/Exec[wget-wget::fetch composer]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[urlhttp://symfony.com/installerappsymfony]/Filefetcher::Fetch[symfony]/Wget::Fetch[wget::fetch symfony]/Exec[wget-wget::fetch symfony]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[urlhttp://symfony.com/installerappsymfony]/Filefetcher::Fetch[symfony]/Exec[fix permissions symfony]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[urlhttps://getcomposer.org/composer.pharappcomposer]/Filefetcher::Fetch[composer]/Exec[fix permissions composer]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[urlhttp://get.sensiolabs.org/php-cs-fixer.pharappphp-cs-fixer]/Filefetcher::Fetch[php-cs-fixer]/Wget::Fetch[wget::fetch php-cs-fixer]/Exec[wget-wget::fetch php-cs-fixer]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[urlhttp://get.sensiolabs.org/php-cs-fixer.pharappphp-cs-fixer]/Filefetcher::Fetch[php-cs-fixer]/Exec[fix permissions php-cs-fixer]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[urlhttps://github.com/Behat/Behat/releases/download/v3.0.14/behat.pharappbehat]/Filefetcher::Fetch[behat]/Wget::Fetch[wget::fetch behat]/Exec[wget-wget::fetch behat]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[urlhttps://github.com/Behat/Behat/releases/download/v3.0.14/behat.pharappbehat]/Filefetcher::Fetch[behat]/Exec[fix permissions behat]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[urlhttps://github.com/phpspec/phpspec/releases/download/2.1.1/phpspec.pharappphpspec]/Filefetcher::Fetch[phpspec]/Wget::Fetch[wget::fetch phpspec]/Exec[wget-wget::fetch phpspec]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[urlhttps://github.com/phpspec/phpspec/releases/download/2.1.1/phpspec.pharappphpspec]/Filefetcher::Fetch[phpspec]/Exec[fix permissions phpspec]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[urlhttps://github.com/box-project/box2/releases/download/2.5.0/box-2.5.0.pharappbox]/Filefetcher::Fetch[box]/Wget::Fetch[wget::fetch box]/Exec[wget-wget::fetch box]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[urlhttps://github.com/box-project/box2/releases/download/2.5.0/box-2.5.0.pharappbox]/Filefetcher::Fetch[box]/Exec[fix permissions box]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[urlhttps://phar.phpunit.de/phpunit.pharappphpunit]/Filefetcher::Fetch[phpunit]/Wget::Fetch[wget::fetch phpunit]/Exec[wget-wget::fetch phpunit]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[urlhttps://phar.phpunit.de/phpunit.pharappphpunit]/Filefetcher::Fetch[phpunit]/Exec[fix permissions phpunit]/returns: executed successfully[0m
+[mNotice: Finished catalog run in 15.35 seconds[0m
+
+        '
+
+    -
+        start_date: 2015-03-14
+        start_time: 16:35:46
+        vagrantfile: tests/gajdaw-php_phars/vm-tests/ubuntu-14-04
+        output: '
+
+Ubuntu
+14.04
+
+[mNotice: Compiled catalog for vagrant-ubuntu-trusty-32 in environment production in 1.05 seconds[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"behat", "url"=>"https://github.com/Behat/Behat/releases/download/v3.0.14/behat.phar"}]/Filefetcher::Fetch[behat]/Wget::Fetch[wget::fetch behat]/Exec[wget-wget::fetch behat]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"symfony", "url"=>"http://symfony.com/installer"}]/Filefetcher::Fetch[symfony]/Wget::Fetch[wget::fetch symfony]/Exec[wget-wget::fetch symfony]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"symfony", "url"=>"http://symfony.com/installer"}]/Filefetcher::Fetch[symfony]/Exec[fix permissions symfony]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"behat", "url"=>"https://github.com/Behat/Behat/releases/download/v3.0.14/behat.phar"}]/Filefetcher::Fetch[behat]/Exec[fix permissions behat]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"php-cs-fixer", "url"=>"http://get.sensiolabs.org/php-cs-fixer.phar"}]/Filefetcher::Fetch[php-cs-fixer]/Wget::Fetch[wget::fetch php-cs-fixer]/Exec[wget-wget::fetch php-cs-fixer]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"php-cs-fixer", "url"=>"http://get.sensiolabs.org/php-cs-fixer.phar"}]/Filefetcher::Fetch[php-cs-fixer]/Exec[fix permissions php-cs-fixer]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"composer", "url"=>"https://getcomposer.org/composer.phar"}]/Filefetcher::Fetch[composer]/Wget::Fetch[wget::fetch composer]/Exec[wget-wget::fetch composer]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"composer", "url"=>"https://getcomposer.org/composer.phar"}]/Filefetcher::Fetch[composer]/Exec[fix permissions composer]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"box", "url"=>"https://github.com/box-project/box2/releases/download/2.5.0/box-2.5.0.phar"}]/Filefetcher::Fetch[box]/Wget::Fetch[wget::fetch box]/Exec[wget-wget::fetch box]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"box", "url"=>"https://github.com/box-project/box2/releases/download/2.5.0/box-2.5.0.phar"}]/Filefetcher::Fetch[box]/Exec[fix permissions box]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"phpunit", "url"=>"https://phar.phpunit.de/phpunit.phar"}]/Filefetcher::Fetch[phpunit]/Wget::Fetch[wget::fetch phpunit]/Exec[wget-wget::fetch phpunit]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"phpunit", "url"=>"https://phar.phpunit.de/phpunit.phar"}]/Filefetcher::Fetch[phpunit]/Exec[fix permissions phpunit]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"phpspec", "url"=>"https://github.com/phpspec/phpspec/releases/download/2.1.1/phpspec.phar"}]/Filefetcher::Fetch[phpspec]/Wget::Fetch[wget::fetch phpspec]/Exec[wget-wget::fetch phpspec]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"phpspec", "url"=>"https://github.com/phpspec/phpspec/releases/download/2.1.1/phpspec.phar"}]/Filefetcher::Fetch[phpspec]/Exec[fix permissions phpspec]/returns: executed successfully[0m
+[mNotice: Finished catalog run in 54.27 seconds[0m
+
+        '
+
+
+
+stop_date: 2015-03-14
+stop_time: 16:38:08
