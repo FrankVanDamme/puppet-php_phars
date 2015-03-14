@@ -1,0 +1,141 @@
+
+
+#
+# Log produced by: puppet-modules-factory
+# For more info: https://github.com/puppet-by-examples/puppet-modules-factory
+#
+
+
+start_date: 2015-03-14
+start_time: 17:01:27
+module: gajdaw-php_phars
+version: v0.2.0
+testsuite: tests/gajdaw-php_phars/*
+testfiles: 'tests/gajdaw-php_phars/debian-6-0 tests/gajdaw-php_phars/debian-7-4 tests/gajdaw-php_phars/vm-tests'
+
+tests:
+
+
+    -
+        start_date: 2015-03-14
+        start_time: 17:01:27
+        vagrantfile: tests/gajdaw-php_phars/vm-tests/ubuntu-12-04
+        output: '
+
+Ubuntu
+12.04
+
+Puppet version 3.7.4
+Ruby version ruby 1.8.7 (2011-06-30 patchlevel 352) [i686-linux]
+Notice: Compiled catalog for ubuntu1204-i386 in environment production in 0.78 seconds
+Notice: /Stage[main]/Php5::Prerequisites/Package[python-software-properties]/ensure: ensure changed "purged" to "present"
+Notice: /Stage[main]/Php5::Prerequisites/Package[libcurl3-dev]/ensure: ensure changed "purged" to "present"
+Notice: /Stage[main]/Php5::Prerequisites/Package[acl]/ensure: ensure changed "purged" to "present"
+Notice: /Stage[main]/Php5/Package[php5-mysql]/ensure: ensure changed "purged" to "present"
+Notice: /Stage[main]/Php5/Package[php5-xdebug]/ensure: ensure changed "purged" to "present"
+Notice: /Stage[main]/Php5/Package[php5-xsl]/ensure: ensure changed "purged" to "present"
+Notice: /Stage[main]/Php5/Package[php5-curl]/ensure: ensure changed "purged" to "present"
+Notice: /Stage[main]/Php5/Exec[php5:update-php-add-repository]/returns: executed successfully
+Notice: /Stage[main]/Php5/Exec[php5:apt-get-update]/returns: executed successfully
+Notice: /Stage[main]/Php5/Package[php5]/ensure: ensure changed "purged" to "present"
+Notice: /Stage[main]/Php5/File_line[php-apache-realpath-cache-size]/ensure: created
+Notice: /Stage[main]/Php5/File_line[php5_cli_date_timezone]/ensure: created
+Notice: /Stage[main]/Php5/File_line[php5_apache2_date_timezone]/ensure: created
+Notice: /Stage[main]/Php5/File_line[php-apache-realpath-cache-ttl]/ensure: created
+Notice: /Stage[main]/Php5/File_line[php-cli-phar-readonly]/ensure: created
+Notice: Finished catalog run in 79.73 seconds
+Notice: Compiled catalog for ubuntu1204-i386 in environment production in 1.05 seconds
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[appcomposerurlhttps://getcomposer.org/composer.phar]/Filefetcher::Fetch[composer]/Wget::Fetch[wget::fetch composer]/Exec[wget-wget::fetch composer]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[appbehaturlhttps://github.com/Behat/Behat/releases/download/v3.0.14/behat.phar]/Filefetcher::Fetch[behat]/Wget::Fetch[wget::fetch behat]/Exec[wget-wget::fetch behat]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[appsymfonyurlhttp://symfony.com/installer]/Filefetcher::Fetch[symfony]/Wget::Fetch[wget::fetch symfony]/Exec[wget-wget::fetch symfony]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[appsymfonyurlhttp://symfony.com/installer]/Filefetcher::Fetch[symfony]/Exec[fix permissions symfony]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[appcomposerurlhttps://getcomposer.org/composer.phar]/Filefetcher::Fetch[composer]/Exec[fix permissions composer]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[appbehaturlhttps://github.com/Behat/Behat/releases/download/v3.0.14/behat.phar]/Filefetcher::Fetch[behat]/Exec[fix permissions behat]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[appphp-cs-fixerurlhttp://get.sensiolabs.org/php-cs-fixer.phar]/Filefetcher::Fetch[php-cs-fixer]/Wget::Fetch[wget::fetch php-cs-fixer]/Exec[wget-wget::fetch php-cs-fixer]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[appphp-cs-fixerurlhttp://get.sensiolabs.org/php-cs-fixer.phar]/Filefetcher::Fetch[php-cs-fixer]/Exec[fix permissions php-cs-fixer]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[appphpspecurlhttps://github.com/phpspec/phpspec/releases/download/2.1.1/phpspec.phar]/Filefetcher::Fetch[phpspec]/Wget::Fetch[wget::fetch phpspec]/Exec[wget-wget::fetch phpspec]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[appphpspecurlhttps://github.com/phpspec/phpspec/releases/download/2.1.1/phpspec.phar]/Filefetcher::Fetch[phpspec]/Exec[fix permissions phpspec]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[appboxurlhttps://github.com/box-project/box2/releases/download/2.5.0/box-2.5.0.phar]/Filefetcher::Fetch[box]/Wget::Fetch[wget::fetch box]/Exec[wget-wget::fetch box]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[appboxurlhttps://github.com/box-project/box2/releases/download/2.5.0/box-2.5.0.phar]/Filefetcher::Fetch[box]/Exec[fix permissions box]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[appphpuniturlhttps://phar.phpunit.de/phpunit.phar]/Filefetcher::Fetch[phpunit]/Wget::Fetch[wget::fetch phpunit]/Exec[wget-wget::fetch phpunit]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[appphpuniturlhttps://phar.phpunit.de/phpunit.phar]/Filefetcher::Fetch[phpunit]/Exec[fix permissions phpunit]/returns: executed successfully
+Notice: Finished catalog run in 25.07 seconds
+PHP 5.5.22-1+deb.sury.org~precise+1 (cli) (built: Feb 20 2015 11:25:06) 
+Copyright (c) 1997-2015 The PHP Group
+Zend Engine v2.5.0, Copyright (c) 1998-2015 Zend Technologies
+    with Zend OPcache v7.0.4-dev, Copyright (c) 1999-2015, by Zend Technologies
+Composer version 1.0-dev (d57187446151ef84b28cb9f6b3ed38cc2cffc597) 2015-03-09 23:06:06
+Box version 2.5.0 build 2cdd3de72de4382223cf8dbf83b49d81249bad19
+PHPUnit 4.5.0 by Sebastian Bergmann and contributors.
+
+phpspec version 2.1.1
+Symfony Installer version 1.0.0
+PHP CS Fixer version 1.5.1 by Fabien Potencier (85777eb)
+behat version 3.0.14
+
+        '
+
+    -
+        start_date: 2015-03-14
+        start_time: 17:03:50
+        vagrantfile: tests/gajdaw-php_phars/vm-tests/ubuntu-14-04
+        output: '
+
+Ubuntu
+14.04
+
+Puppet version 3.7.4
+Ruby version ruby 1.9.3p484 (2013-11-22 revision 43786) [i686-linux]
+Notice: Compiled catalog for ubuntu1404-i386 in environment production in 0.79 seconds
+Notice: /Stage[main]/Php5::Prerequisites/Package[libcurl3-dev]/ensure: ensure changed "purged" to "present"
+Notice: /Stage[main]/Php5::Prerequisites/Package[acl]/ensure: ensure changed "purged" to "present"
+Notice: /Stage[main]/Php5::Prerequisites/Package[software-properties-common]/ensure: ensure changed "purged" to "present"
+Notice: /Stage[main]/Php5/Package[php5-mysql]/ensure: ensure changed "purged" to "present"
+Notice: /Stage[main]/Php5/Package[php5-xdebug]/ensure: ensure changed "purged" to "present"
+Notice: /Stage[main]/Php5/Package[php5-xsl]/ensure: ensure changed "purged" to "present"
+Notice: /Stage[main]/Php5/Package[php5-curl]/ensure: ensure changed "purged" to "present"
+Notice: /Stage[main]/Php5/Exec[php5:update-php-add-repository]/returns: executed successfully
+Notice: /Stage[main]/Php5/Exec[php5:apt-get-update]/returns: executed successfully
+Notice: /Stage[main]/Php5/Package[php5]/ensure: ensure changed "purged" to "present"
+Notice: /Stage[main]/Php5/File_line[php-apache-realpath-cache-size]/ensure: created
+Notice: /Stage[main]/Php5/File_line[php5_cli_date_timezone]/ensure: created
+Notice: /Stage[main]/Php5/File_line[php5_apache2_date_timezone]/ensure: created
+Notice: /Stage[main]/Php5/File_line[php-apache-realpath-cache-ttl]/ensure: created
+Notice: /Stage[main]/Php5/File_line[php-cli-phar-readonly]/ensure: created
+Notice: Finished catalog run in 63.43 seconds
+Notice: Compiled catalog for ubuntu1404-i386 in environment production in 0.96 seconds
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"behat", "url"=>"https://github.com/Behat/Behat/releases/download/v3.0.14/behat.phar"}]/Filefetcher::Fetch[behat]/Wget::Fetch[wget::fetch behat]/Exec[wget-wget::fetch behat]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"symfony", "url"=>"http://symfony.com/installer"}]/Filefetcher::Fetch[symfony]/Wget::Fetch[wget::fetch symfony]/Exec[wget-wget::fetch symfony]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"symfony", "url"=>"http://symfony.com/installer"}]/Filefetcher::Fetch[symfony]/Exec[fix permissions symfony]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"behat", "url"=>"https://github.com/Behat/Behat/releases/download/v3.0.14/behat.phar"}]/Filefetcher::Fetch[behat]/Exec[fix permissions behat]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"php-cs-fixer", "url"=>"http://get.sensiolabs.org/php-cs-fixer.phar"}]/Filefetcher::Fetch[php-cs-fixer]/Wget::Fetch[wget::fetch php-cs-fixer]/Exec[wget-wget::fetch php-cs-fixer]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"php-cs-fixer", "url"=>"http://get.sensiolabs.org/php-cs-fixer.phar"}]/Filefetcher::Fetch[php-cs-fixer]/Exec[fix permissions php-cs-fixer]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"composer", "url"=>"https://getcomposer.org/composer.phar"}]/Filefetcher::Fetch[composer]/Wget::Fetch[wget::fetch composer]/Exec[wget-wget::fetch composer]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"composer", "url"=>"https://getcomposer.org/composer.phar"}]/Filefetcher::Fetch[composer]/Exec[fix permissions composer]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"box", "url"=>"https://github.com/box-project/box2/releases/download/2.5.0/box-2.5.0.phar"}]/Filefetcher::Fetch[box]/Wget::Fetch[wget::fetch box]/Exec[wget-wget::fetch box]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"box", "url"=>"https://github.com/box-project/box2/releases/download/2.5.0/box-2.5.0.phar"}]/Filefetcher::Fetch[box]/Exec[fix permissions box]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"phpunit", "url"=>"https://phar.phpunit.de/phpunit.phar"}]/Filefetcher::Fetch[phpunit]/Wget::Fetch[wget::fetch phpunit]/Exec[wget-wget::fetch phpunit]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"phpunit", "url"=>"https://phar.phpunit.de/phpunit.phar"}]/Filefetcher::Fetch[phpunit]/Exec[fix permissions phpunit]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"phpspec", "url"=>"https://github.com/phpspec/phpspec/releases/download/2.1.1/phpspec.phar"}]/Filefetcher::Fetch[phpspec]/Wget::Fetch[wget::fetch phpspec]/Exec[wget-wget::fetch phpspec]/returns: executed successfully
+Notice: /Stage[main]/Php_phars/Php_phars::Process_array[{"app"=>"phpspec", "url"=>"https://github.com/phpspec/phpspec/releases/download/2.1.1/phpspec.phar"}]/Filefetcher::Fetch[phpspec]/Exec[fix permissions phpspec]/returns: executed successfully
+Notice: Finished catalog run in 57.62 seconds
+PHP 5.5.22-1+deb.sury.org~trusty+1 (cli) (built: Feb 20 2015 11:23:52) 
+Copyright (c) 1997-2015 The PHP Group
+Zend Engine v2.5.0, Copyright (c) 1998-2015 Zend Technologies
+    with Zend OPcache v7.0.4-dev, Copyright (c) 1999-2015, by Zend Technologies
+    with Xdebug v2.2.5, Copyright (c) 2002-2014, by Derick Rethans
+Composer version 1.0-dev (d57187446151ef84b28cb9f6b3ed38cc2cffc597) 2015-03-09 23:06:06
+Box version 2.5.0 build 2cdd3de72de4382223cf8dbf83b49d81249bad19
+PHPUnit 4.5.0 by Sebastian Bergmann and contributors.
+
+phpspec version 2.1.1
+Symfony Installer version 1.0.0
+PHP CS Fixer version 1.5.1 by Fabien Potencier (85777eb)
+behat version 3.0.14
+
+        '
+
+
+
+stop_date: 2015-03-14
+stop_time: 17:06:32
