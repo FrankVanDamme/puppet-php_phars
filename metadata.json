@@ -36,15 +36,15 @@
   "dependencies": [
     {
       "name": "gajdaw/filefetcher",
-      "version_requirement": ">=0.1.2"
+      "version_requirement": "0.1.x"
     },
     {
       "name": "puppetlabs/stdlib",
-      "version_requirement": ">=4.5.0"
+      "version_requirement": "4.5.x"
     },
     {
       "name": "gajdaw/diverse_functions",
-      "version_requirement": ">=0.1.1"
+      "version_requirement": "0.1.x"
     }
   ]
 }
