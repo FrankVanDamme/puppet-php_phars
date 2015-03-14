@@ -1,6 +1,6 @@
 {
   "name": "gajdaw-php_phars",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "author": "gajdaw",
   "summary": "A module to install PHARS: composer.phar, phpunit.phar, etc.",
   "license": "MIT",
