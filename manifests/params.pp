@@ -36,7 +36,7 @@ class php_phars::params {
     },
     {
       'app' => 'php-cs-fixer',
-      'url' => 'http://cs.sensiolabs.org/get/php-cs-fixer.phar'
+      'url' => 'http://get.sensiolabs.org/php-cs-fixer.phar'
     },
     {
       'app' => 'box',
