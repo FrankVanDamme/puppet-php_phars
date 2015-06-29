@@ -3,11 +3,11 @@
 #
 
 define php_phars::process_array (
-  $target_dir = undef,
-  $user       = undef,
-  $rights     = undef,
-  $redownload = undef,
-  $filters    = undef
+    $target_dir = undef,
+    $user       = undef,
+    $rights     = undef,
+    $redownload = undef,
+    $filters    = undef
 ) {
 
     include stdlib
