@@ -124,13 +124,12 @@ class php_phars (
   }
 
   if $append {
-    php_phars::process_array { $append:
-
+    php_phars::process_array { "append":
       target_dir => $param_target_dir,
       user       => $param_user,
       rights     => $param_rights,
       redownload => $param_redownload,
+      append     => $append,
     }
   }
-
 }

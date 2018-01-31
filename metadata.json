@@ -25,6 +25,12 @@
         "12.04",
         "14.04"
       ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "9.3"
+      ]
     }
   ],
   "requirements": [
