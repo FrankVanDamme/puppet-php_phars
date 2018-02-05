@@ -15,7 +15,7 @@ define php_phars::process_array (
 
     $append.each | $application | {
 
-      if is_hash($application) and has_key($app, 'app') and has_key($app, 'url') {
+      if is_hash($application) and has_key($application, 'app') and has_key($application, 'url') {
 
 	# TODO
 	#
