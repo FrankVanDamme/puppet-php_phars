@@ -29,6 +29,9 @@
     {
       "operatingsystem": "Debian",
       "operatingsystemrelease": [
+        "8.9",
+        "8.10",
+        "8.11",
         "9.3",
         "9.4",
         "9.5",
